@@ -1,0 +1,18 @@
+*.env
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+id_rsa*
+# script outputs
+*.csv
+Nutanix-Inventory/
+# agent/session state
+.claude/
+AGENTS.md
+CLAUDE.md
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
