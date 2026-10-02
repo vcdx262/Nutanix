@@ -18,7 +18,9 @@ repositories.
 |---|---|
 | [api](api/) | `Connect-PrismCentral.ps1` — reusable v4 connection context (Basic auth or API key; self-signed cert handling) |
 | [inventory](inventory/) | `Get-AHVInventory.ps1` (clusters/hosts/VMs), `Get-PrismAlerts.ps1` (alert posture) |
-| [docs](docs/) | [`Nutanix-v4-API-Reference-Guide.md`](docs/Nutanix-v4-API-Reference-Guide.md) — connect → inventory → alerts usage guide |
+| [provisioning](provisioning/) | `New-AHVVM.ps1` — CSV-driven AHV VM creation (resolves cluster/subnet/container, v4 spec POST) |
+| [tests](tests/) | AHV cluster-validation Excel test plan (9-column schema) |
+| [docs](docs/) | v4 API reference guide + AHV cluster-validation guide |
 
 ## Quick start
 
@@ -37,9 +39,9 @@ $pc = .\api\Connect-PrismCentral.ps1 -Server pc.lab.local
 
 ## Roadmap
 
-Planned additions: VM provisioning from CSV, image/subnet/category management, a
-cluster-validation Excel test plan, and a Foundation/cluster-deployment guide — added as
-each is validated against CE.
+Delivered: connection helper, inventory, alert reporting, CSV-driven VM provisioning, a
+cluster-validation test plan and guide. Planned next: image/subnet/category management and
+a Foundation/cluster-deployment guide — added as each is validated against CE.
 
 ## License
 
